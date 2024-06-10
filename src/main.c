@@ -47,6 +47,19 @@ int main() {
                     int num = i;
                     printf("%d> %s\n", num + 1, terminal[num]);
                 }
+                break;
+            case 4:
+                for (size_t i = 0; i < sizeof(media) / sizeof(media[0]); i++) {
+                    int num = i;
+                    printf("%d> %s\n", num + 1, media[num]);
+                }
+                break;
+            case 5:
+                for (size_t i = 0; i < sizeof(gaming) / sizeof(gaming[0]); i++) {
+                    int num = i
+                    printf("%d> %s\n", num + 1, gaming[num]);
+                }
+                break;
         }
     }
 }
