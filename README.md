@@ -1,0 +1,2 @@
+# IdiotInstallerC
+ IdiotInstaller in C
