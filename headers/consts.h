@@ -22,3 +22,71 @@ const char* pManagers[] = {
     "Fedora",
     "Void"
 };
+
+const char* installType[] = {
+    "File Managers",
+    "Browsers",
+    "Terminals",
+    "Media", 
+    "Gaming", 
+    "Connection Utilities", 
+    "Desktop Environments", 
+    "Extras", 
+    "Games", 
+    "Emulators"
+};
+
+const char* fileManagers[] = {
+    "Caja", 
+    "Thunar", 
+    "Dolphin", 
+    "Nautilus"
+};
+
+const char* browsers[] = {
+    "Chrome", 
+    "Chromium", 
+    "Opera", 
+    "Firefox", 
+    "LibreWolf", 
+    "Edge"
+};
+
+const char* terminal[] = {
+    "Alacritty", 
+    "Kitty", 
+    "XTerm",
+    "Konsole", 
+    "GNOME"
+};
+
+const char* gaming[] = {
+    "Steam", 
+    "Discord", 
+    "Prism Launcher", 
+    "ATLauncher", 
+    "Heroic Launcher", 
+    "Lutris", 
+    "ProtonUp-QT"
+};
+
+const char* media[] = {
+    "Spotify", 
+    "VLC", 
+    "ThunderBird", 
+    "OBS Studio", 
+    "KdenLive", 
+    "DaVinci Resolve", 
+    "Rhythm Box"
+};
+
+const char* desktop[] = {
+    "KDE Plasma", 
+    "GNOME", 
+    "Xfce4", 
+    "LXQT", 
+    "MATE", 
+    "i3", 
+    "Bspwm", 
+    "Sway"
+};
