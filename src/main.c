@@ -2,19 +2,16 @@
 #include "headers/consts.h"
 
 int getDistro() {
-    int found = 0;
+    FILE *fp = NULL;
     for (size_t i = 0; i < sizeof(pManagersPlacement) / sizeof(pManagersPlacement[0]); i++) {
-        FILE *fp = fopen(pManagersPlacement[i], "r");
+        fp = fopen(pManagersPlacement[i], "r");
         if (fp != NULL) {
             printf("Detected derivitive of %s.\n", pManagers[i]);
             fclose(fp);
-            found = 1;
-            break;
+            return 1;
         }
     }
-    if (!found) {
-        printf("Unknown Distro.\n");
-    }
+    printf("Unknown Distro.\n");
     return 0;
 }
 
@@ -30,17 +27,26 @@ int getSelection() {
 }
 
 int main() {
-    getDistro();
-    int choice = getSelection();
-    if (choice == 1) {
-        for (size_t i = 0; i < sizeof(fileManagers) / sizeof(fileManagers[0]); i++) {
-            int num = i;
-            printf("%d> %s\n", num + 1, fileManagers[num]);
-        }
-    } else if (choice == 2) {
-        for (size_t i = 0; i < sizeof(browsers) / sizeof(browsers[0]); i++) {
-            int num = i;
-            printf("%d> %s\n", num + 1, browsers[num]);
+    if (getDistro()) {
+        int choice = getSelection();
+        switch (choice) {
+            case 1:
+                for (size_t i = 0; i < sizeof(fileManagers) / sizeof(fileManagers[0]); i++) {
+                    int num = i;
+                    printf("%d> %s\n", num + 1, fileManagers[num]);
+                }
+                break;
+            case 2:
+                for (size_t i = 0; i < sizeof(browsers) / sizeof(browsers[0]); i++) {
+                    int num = i;
+                    printf("%d> %s\n", num + 1, browsers[num]);
+                }
+                break;
+            case 3:
+                for (size_t i = 0; i < sizeof(terminal) / sizeof(terminal[0]); i++) {
+                    int num = i;
+                    printf("%d> %s\n", num + 1, terminal[num]);
+                }
         }
     }
 }
