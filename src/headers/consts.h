@@ -90,3 +90,47 @@ const char* desktop[] = {
     "Bspwm", 
     "Sway"
 };
+
+const char* connection[] = {
+    "Moonlight", 
+    "Sunshine", 
+    "Haguichi(Hamachi)", 
+    "ZeroTier", 
+    "WireGuard", 
+    "OpenSSH", 
+    "Anydesk", 
+    "TeamViewer"
+};
+
+const char* games[] = {
+    "Xonotic", 
+    "Sauerbraten", 
+    "MineTEST", 
+    "Open Doom", 
+    "Open Arena", 
+    "OsuLAZER"
+};
+
+const char* emulators[] = {
+    "RetroArch", 
+    "OpenEmu", 
+    "PCSX2", 
+    "Citris", 
+    "Duck Station", 
+    "Dolphin EMU", 
+    "PPSSPP", 
+    "Ryujinx"
+};
+
+const char* extra[] = {
+    "Paru", 
+    "Yay", 
+    "Pamac", 
+    "Connman", 
+    "Blueman", 
+    "NetworkManager", 
+    "Hyfetch", 
+    "Htop", 
+    "Cmatrix", 
+    "Papirus Icons"
+};
