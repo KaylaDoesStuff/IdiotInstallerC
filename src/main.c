@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "headers/consts.h"
+#include <string.h>
 
 int getDistro() {
     FILE *fp = NULL;
@@ -24,6 +25,10 @@ int getSelection() {
     printf("\nEnter a number: ");
     scanf("%d", &selection);
     return selection;
+}
+
+int readSelection(int Type) {
+
 }
 
 int getSelectionClass2() {
@@ -99,7 +104,7 @@ int main() {
         int choice;
         do {
             choice = getSelectionClass2();
-        } while (choice >= 11);
+        } while (choice >= 11 || choice <= 0);
         printf("%d", choice);
     }
 }
